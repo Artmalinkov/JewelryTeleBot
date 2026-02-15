@@ -1,5 +1,5 @@
 from aiogram import Router
-from aiogram.types import CallbackQuery, InlineKeyboardMarkup, InlineKeyboardButton
+from aiogram.types import CallbackQuery, InlineKeyboardMarkup, InlineKeyboardButton, Message
 
 from sqlalchemy import select
 
@@ -7,7 +7,6 @@ from app.db.engine import AsyncSessionLocal
 from app.bot.keyboards.catalog import categories_keyboard
 from app.bot.keyboards.product import products_keyboard
 from app.db.models.product import Product
-
 
 router = Router()
 
